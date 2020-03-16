@@ -4,3 +4,54 @@
     border: 0;
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: black;
+}
+
+.temp {
+    height: 200em;
+}
+
+.ref {
+    position: fixed;
+    bottom: 8%;
+    right: 2%;
+}
+
+    .ref .top {
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50% 50%;
+        display: inline-flex;
+        justify-content: center;
+        transition: width .2s linear, height .2s linear;
+    }
+
+        .ref .top:hover {
+            width: 8vh;
+            height: 8vh;
+            font-size: 45px;
+            transition: width .2s linear, height .2s linear, font-size .2s linear;
+            background-color: lime;
+        }
+
+            .ref .top span {
+                font-size: 30px;
+                align-self: center;
+                color: lime;
+                transition: font-size .2s linear, color .2s linear;
+            }
+
+                .ref .top:hover span {
+                    font-size: 50px;
+                    color: black;
+                    transition: font-size .2s linear, color .2s linear;
+                }
+

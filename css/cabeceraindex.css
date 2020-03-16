@@ -1,3 +1,15 @@
-header>nav>.menu li>a {
-    padding: 8%;
+header {
+    background: url(../images/Avery-Dennison-SW900-Supreme-Wrapping-Film-Black-Carbon-Fiber-SW900-194-X.jpg) repeat-x;
+    background-size: 7%;
+    position: absolute;
+    z-index: 10;
 }
+
+    header>nav>.menu li>a {
+        padding: 8%;
+    }
+
+        header>nav>.menu>li:hover li {
+            background: url(../images/Avery-Dennison-SW900-Supreme-Wrapping-Film-Black-Carbon-Fiber-SW900-194-X.jpg) repeat-x;
+            background-size: 30%;
+        }

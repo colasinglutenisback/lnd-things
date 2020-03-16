@@ -1,0 +1,35 @@
+footer {
+    display: inline-flex;
+    width: 100%;
+    background: url(../images/fiber2.jpg) repeat-x;
+    background-size: 5%;
+    justify-content: space-between;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    padding: 1%;
+    align-self: flex-end;
+}
+
+    footer * {
+        color: #44D62D;
+        font-size: 1rem;
+    }
+
+    footer a {
+        text-decoration: none;
+        
+    }
+
+    footer>.redes{
+        display: inline-flex;
+        width: 15%;
+        flex-flow: row nowrap;
+    }
+
+        footer>.redes>.rrss {
+            width: 25%;
+        }
+
+            footer>.redes>.rrss>a {
+                padding: 20%;
+            }
