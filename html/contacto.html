@@ -9,6 +9,63 @@
     <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
-    
+    <header>
+        <div class="imgcabecera">
+            <a href="../index.html"><img src="../images/Razer-Logo (3).png" alt="cabecera"></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a>
+                    <ul>
+                        <li><a href="productos.html#ratones">Ratones</a></li>
+                        <li><a href="productos.html#teclados">Teclados</a></li>
+                        <li><a href="productos.html#cascos">Cascos</a></li>
+                    </ul>
+                </li>
+                <li><a href="tiendas.html">Nuestras tiendas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <form action="http://www.miservidor.es/maneja_formulario.php" method="get" enctype="application/x-www-form-urlencoded">
+                    <fieldset>
+                        <div class="">
+                            <label for="nombre">Nombre:</label>
+                            <input class="" id="nombre" type="text" name="nombre" maxlength="50" placeholder="Introduce tu nombre." />
+                        </div>
+                        <div class=""><label for="apellido">Apellidos:</label>
+                            <input class="" id="apellido" type="text" name="apellidos" maxlength="100" placeholder="Introduce tus apellidos." />
+                        </div>
+                        <div class=""><label for="correo">Apellidos:</label>
+                            <input class="" id="correo" type="text" name="email" maxlength="50" placeholder="Introduce tu e-mail." />
+                        </div>
+                        <div class="">
+                            <label for="msg" class="mensaje">Mensaje:</label>
+                            <textarea class="" id="msg" name="mensaje" cols="40" rows="5" placeholder="Introduce tu mensaje." ></textarea>
+                        </div>
+                        <div class="">
+                            <input id="suscripcion" name="boletin" type="checkbox" value="suscribir" checked="checked" /><label for="suscripcion">Quiero suscribirme al boletín de novedades y recibir ofertas promocionales.</label>
+                            <input id="terceros" name="share" type="checkbox" value="compartir" checked="" /><label for="terceros">Acepto compartir mis datos con terceros de confianza.</label>
+                        </div>
+                        <div class="">
+                            Vía de Contacto:
+                            <div class="">
+                                        <input id="correo" type="radio" name="contacto" value="email" checked="checked" /> <label for="correo">Correo</label>
+                            </div>
+                            <div class="">
+                                        <input id="SMS" type="radio" name="contacto" value="SMS" /> <label for="SMS">SMS</label>
+                            </div>
+                        </div>
+                        <input class="boton" type="submit" value="Enviar" />
+                        <input class="boton" type="reset" name="limpiar" value="Limpiar" />
+                     </fieldset>
+                 </form>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
