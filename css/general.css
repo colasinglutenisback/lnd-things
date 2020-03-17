@@ -11,8 +11,9 @@ a {
 
 body {
     display: flex;
-    flex-flow: row wrap;
-    background-color: black;
+    flex-flow: column wrap;
+    align-items: center;
+    background: url(../images/fondo.gif) repeat;
 }
 
 .temp {
@@ -26,8 +27,8 @@ body {
 }
 
     .ref .top {
-        width: 5vh;
-        height: 5vh;
+        width: 3vw;
+        height: 3vw;
         border-radius: 50% 50%;
         display: inline-flex;
         justify-content: center;
@@ -35,8 +36,8 @@ body {
     }
 
         .ref .top:hover {
-            width: 8vh;
-            height: 8vh;
+            width: 5vw;
+            height: 5vw;
             font-size: 45px;
             transition: width .2s linear, height .2s linear, font-size .2s linear;
             background-color: lime;

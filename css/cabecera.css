@@ -3,8 +3,7 @@ header {
     flex-flow: row nowrap;
     align-content: space-between;
     width: 100%;
-    background: url(../images/Avery-Dennison-SW900-Supreme-Wrapping-Film-Black-Carbon-Fiber-SW900-194-X.jpg) repeat-x;
-    background-size: 5%;
+    background: url(../images/fiber1.jpg) repeat;
     align-self: flex-start;
 }
 
@@ -70,6 +69,5 @@ header {
                         display: block;
                         visibility: visible;
                         transition: all .5s linear;
-                        background: url(../images/Avery-Dennison-SW900-Supreme-Wrapping-Film-Black-Carbon-Fiber-SW900-194-X.jpg) repeat-x;
-                        background-size: 22%;
+                        background: url(../images/fiber1.jpg) repeat;
                     }
