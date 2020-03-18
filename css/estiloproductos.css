@@ -1,81 +1,116 @@
-main {
-    width: 80%;
-    display: inline-flex;
-    color: white;
-    flex-flow: column nowrap;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.tituloseccion {
-    padding: 3%;
-    text-align: center;
-    font-size: 5rem;
-    color: #44D62D;
-}
-
 .todo {
-    display: inline-flex;
-    flex-flow: row wrap;
+    overflow: visible;
 }
 
-.tituloprod {
-    width: 100%;
-    font-size: 3rem;
-    text-decoration: underline;
-    color: #44D62D;
-}
+    .ratones, .teclados, .cascos {
+        margin-bottom: 5%;
+        overflow: visible;
+    }
 
-.ratones {
-    display: inline-flex;
-    flex-flow: row wrap;
-}
+        .tituloprod {
+            width: 100%;
+            font-size: 3rem;
+            color: #44D62D;
+        }
 
-.raton1, .raton2, .raton3 {
-    width: 100%;
-    display: inline-flex;
-    flex-flow: row nowrap;
-    background-color: gray;
-    align-content: space-between;
-    margin: 1% 0;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px 2px white;
-}
+        .raton1, .raton2, .raton3,
+        .teclado1, .teclado2, .teclado3,
+        .cascos1, .cascos2, .cascos3 {
+            width: 100%;
+            display: inline-flex;
+            flex-flow: row nowrap;
+            background-color: gray;
+            justify-content: space-between;
+            margin: 1% 0;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 2px white;
+            min-height: 15em;
+        }
 
-.imgprod {
-    width: 15%;
-    margin: .5%;
-    display: flex;
-    text-align: center;
-}
+            .imgprod {
+                width: 15%;
+                margin: .5%;
+                display: flex;
+                text-align: center;
+            }
 
-.imgprod>img {
-    width: 100%;
-    align-self: center;
-}
+                .imgprod>img {
+                    width: 100%;
+                    align-self: center;
+                }
 
-.descripcionprod {
-    width: 70%;
-    align-self: center;
-}
+                .texto {
+                    position: absolute;
+                    opacity: 0;
+                    color: white;
+                    width: 12%;
+                    height: 14em;
+                    display: flex;
+                    flex-flow: column-reverse;
+                    transition: opacity .4s linear;
+                }
+                    .texto:hover {
+                        opacity: 1;
+                        transition: opacity .4s linear;
+                    }
 
-.compra {
-    width: 15%;
-    align-self: center;
-    display: flex;
-    flex-flow: row wrap;
-}
+                    .texto>.banda {
+                        width: 100%;
+                        background-color: lightslategrey;
+                        padding: 2% 0;
+                        font-weight: bold;
+                        border-radius: 10px;
+                    }
 
-.precio {
-    text-align: center;
-    width: 100%;
-}
+            .descripcionprod {
+                width: 70%;
+                align-self: center;
+                border-left: 1px solid white;
+                border-right: 1px solid white;
+                padding: 2%;
+            }
 
-.precio>s {
-    color: lightgray;
-    margin-right: 5%;
-}
+            .compra {
+                width: 15%;
+                align-self: center;
+                display: flex;
+                flex-flow: row wrap;
+                margin: auto;
+                justify-content: center;
+            }
 
-.precio>span {
-    font-weight: bold;
-    margin-left: 5%;
-}
+                .precio {
+                    text-align: center;
+                    width: 100%;
+                }
+
+                    .precio>s {
+                        color: lightgray;
+                        margin-right: 5%;
+                    }
+
+                    .precio>span {
+                        font-weight: bold;
+                        margin-left: 5%;
+                    }
+
+                .enlace {
+                    width: 90%;
+                }
+
+                    .carro {
+                        margin-top: 10%;
+                        width: 100%;
+                        text-align: center;
+                        border-radius: 20px;
+                        background-color: #44D62D;
+                        padding: 8%;
+                        color: white;
+                    }
+                        .carro:hover {
+                            background-color: green;
+                        }
+
+                        .carro>span {
+                            margin-right: 5%;
+                        }

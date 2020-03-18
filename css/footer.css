@@ -14,15 +14,11 @@ footer {
         font-size: 1rem;
     }
 
-    footer a {
-        text-decoration: none;
-        
-    }
-
     footer>.redes{
         display: inline-flex;
         width: 15%;
         flex-flow: row nowrap;
+        margin-right: 3%;
     }
 
         footer>.redes>.rrss {

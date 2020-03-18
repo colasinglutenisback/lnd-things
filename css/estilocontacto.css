@@ -1,0 +1,120 @@
+.formulario  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 3% 0;
+}
+
+    .formulario>form {
+        width: 60%;
+        background-color: grey;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 2px white;
+        padding: 0 5%;
+        margin: 1%;
+    }
+
+        .formulario>form>fieldset {
+            margin: 5% 0;
+        }
+
+            .formulario legend {
+                font-weight: bold;
+                color: lightgray;
+            }
+
+            .formulario .areaescritura,
+            .formulario .fechanac,
+            .formulario .selpais,
+            .formulario .selmotivo {
+                display: flex;
+                flex-flow: row nowrap;
+                margin: 2% 0;
+                align-items: center;
+            }
+
+                .formulario .areaescritura>label,
+                .formulario .selpais>label,
+                .formulario .fechanac>label,
+                .formulario .selmotivo>label {
+                    width: 20%;
+                    align-self: flex-start;
+                    font-weight: bold;
+                }
+
+                .formulario .areaescritura>textarea,
+                .formulario .areaescritura>input,
+                .formulario .selpais>select,
+                .formulario .selmotivo>select {
+                    width: 80%;
+                    border-radius: 5px;
+                    background-color: #333333;
+                    color: whitesmoke;
+                    padding: 0.5%;
+                }
+                    .formulario textarea::placeholder,
+                    .formulario input::placeholder {
+                        color: whitesmoke;
+                    }
+
+                .formulario .fechanac>.rest {
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-flow: row nowrap;
+                }
+
+                    .formulario .fechanac>.rest>input,
+                    .formulario .fechanac>.rest>select {
+                        width: 30%;
+                        border-radius: 5px;
+                        background-color: #333333;
+                        color: whitesmoke;
+                        padding: 0.5%;
+                    }
+
+                .formulario .areaescritura>input,
+                .formulario .selpais>select,
+                .formulario .fechanac>.rest>input,
+                .formulario .fechanac>.rest>select {
+                    height: 2em;
+                }
+
+                .formulario .selpais>select {
+                    cursor: pointer;
+                }
+
+            .formulario .checkboxes {
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                margin: 2% 0;
+            }
+
+                .formulario .checkboxes>input {
+                    width: 5%;
+                    cursor: pointer;
+                }
+
+                .formulario .checkboxes>label {
+                    width: 95%;
+                }
+
+        .formulario .botones {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            margin: 0 0 5% 0;
+        }
+
+            .formulario .botones>.boton {
+                width: 20%;
+                height: 2em;
+                border-radius: 5px;
+            }
+                .formulario .botones>.boton:hover {
+                    cursor: pointer;
+                    background-color: black;
+                    color: #44D62D;
+                }

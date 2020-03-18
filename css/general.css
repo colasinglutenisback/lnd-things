@@ -16,43 +16,86 @@ body {
     background: url(../images/fondo.gif) repeat;
 }
 
-.temp {
-    height: 200em;
-}
-
-.ref {
-    position: fixed;
-    bottom: 8%;
-    right: 2%;
-}
-
-    .ref .top {
-        width: 3vw;
-        height: 3vw;
-        border-radius: 50% 50%;
-        display: inline-flex;
-        justify-content: center;
-        transition: width .2s linear, height .2s linear;
+    .tituloseccion {
+        padding: 3%;
+        text-align: center;
+        font-size: 5rem;
+        color: #44D62D;
     }
 
-        .ref .top:hover {
-            width: 5vw;
-            height: 5vw;
-            font-size: 45px;
-            transition: width .2s linear, height .2s linear, font-size .2s linear;
-            background-color: lime;
+    main {
+        width: 80%;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        min-height: 90vh;
+    }
+
+        main * {
+            overflow: hidden;
         }
 
-            .ref .top span {
-                font-size: 30px;
-                align-self: center;
-                color: lime;
-                transition: font-size .2s linear, color .2s linear;
+        .ref {
+            position: fixed;
+            bottom: 8%;
+            right: 3%;
+        }
+
+            .ref .top {
+                width: 3vw;
+                height: 3vw;
+                border-radius: 50% 50%;
+                display: inline-flex;
+                justify-content: center;
+                background: radial-gradient(black 40%, #44D62D);
+                transition: width .2s linear, height .2s linear;
             }
 
-                .ref .top:hover span {
-                    font-size: 50px;
-                    color: black;
-                    transition: font-size .2s linear, color .2s linear;
+                .ref .top:hover {
+                    width: 5vw;
+                    height: 5vw;
+                    font-size: 45px;
+                    background: radial-gradient(#44D62D 10%, black 70%);
+                    transition: width .2s linear, height .2s linear, font-size .2s linear;
                 }
 
+                    .ref .top span {
+                        font-size: 25px;
+                        align-self: center;
+                        color: #44D62D;
+                        transition: font-size .2s linear, color .2s linear;
+                    }
+
+                        .ref .top:hover span {
+                            font-size: 50px;
+                            color: black;
+                            transition: font-size .2s linear, color .2s linear;
+                        }
+    
+    
+
+    .banner {
+        margin-top: -50em;
+        z-index: -1;
+        width: 100%;
+        height: 50em;
+        background: url("../images/RazerChroma_3840x2160.png") no-repeat 50% 50%/cover;
+    }
+
+    .icon-cart:before {
+        content: "\e93a";
+    }
+    .icon-arrow-up2:before {
+        content: "\ea3a";
+    }
+    .icon-facebook2:before {
+        content: "\ea91";
+    }
+    .icon-instagram:before {
+        content: "\ea92";
+    }
+    .icon-twitter:before {
+        content: "\ea96";
+    }
+    .icon-youtube:before {
+        content: "\ea9d";
+    }

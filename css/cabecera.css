@@ -45,7 +45,6 @@ header {
                     color: #44D62D;
                     padding: 5%;
                     display: block;
-                    text-decoration: none;
                     transition: color .5s linear, background-color .5s linear;
                 }
                     header>nav>.menu li>a:hover{

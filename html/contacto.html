@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="../css/cabecera.css">
     <link rel="stylesheet" href="../css/estilocontacto.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/301ef71fff/UntitledProject/style.css">
-</head>
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/6ca30f8247/UntitledProject/style.css"></head>
 <body>
     <header>
         <div class="imgcabecera">
@@ -32,42 +31,101 @@
     <main>
         <section>
             <article>
+                <h1 class="tituloseccion">CONTÁCTANOS</h1>
                 <div class="formulario">
                     <form action="http://www.miservidor.es/maneja_formulario.php" method="get" enctype="application/x-www-form-urlencoded">
                         <fieldset>
-                            <div class="">
+                            <legend>DATOS PERSONALES</legend>
+                            <div class="areaescritura">
                                 <label for="nombre">Nombre:</label>
-                                <input class="" id="nombre" type="text" name="nombre" maxlength="50" placeholder="Introduce tu nombre." />
+                                <input id="nombre" type="text" name="nombre" maxlength="50" placeholder="Introduce tu nombre." />
                             </div>
-                            <div class=""><label for="apellido">Apellidos:</label>
-                                <input class="" id="apellido" type="text" name="apellidos" maxlength="100" placeholder="Introduce tus apellidos." />
+                            <div class="areaescritura">
+                                <label for="apellido">Apellidos:</label>
+                                <input id="apellido" type="text" name="apellidos" maxlength="100" placeholder="Introduce tus apellidos." />
                             </div>
-                            <div class=""><label for="correo">Apellidos:</label>
-                                <input class="" id="correo" type="text" name="email" maxlength="50" placeholder="Introduce tu e-mail." />
+                            <div class="areaescritura">
+                                <label for="correo">Email:</label>
+                                <input id="correo" type="text" name="email" maxlength="50" placeholder="Introduce tu e-mail." />
                             </div>
-                            <div class="">
-                                <label for="msg" class="mensaje">Mensaje:</label>
-                                <textarea class="" id="msg" name="mensaje" cols="40" rows="5" placeholder="Introduce tu mensaje." ></textarea>
+                            <div class="fechanac">
+                                <label for="dia">Fecha de nacimiento:</label>
+                                <div class="rest">
+                                    <input id="dia" type="text" value="" name="dia" maxlength="2"/>
+                                    de 
+                                    <select name="mes">
+                                        <option value="ene" selected="selected">Enero</option>
+                                        <option value="feb">Febrero</option>
+                                        <option value="mar">Marzo</option>
+                                        <option value="abr">Abril</option>
+                                        <option value="may">Mayo</option>
+                                        <option value="jun">Junio</option>
+                                        <option value="jul">Julio</option>
+                                        <option value="ago">Agosto</option>
+                                        <option value="sep">Septiembre</option>
+                                        <option value="oct">Octubre</option>
+                                        <option value="nov">Noviembre</option>
+                                        <option value="dic">Diciembre</option>
+                                    </select>
+                                    de 
+                                    <input type="text" value="" name="año" maxlength="4"/>
+                                </div>
                             </div>
-                            <div class="">
+                            <div class="selpais">
+                                <label for="pais">País de residencia:</label>
+                                <select id="pais" name="pais">
+                                    <option value="" selected="selected">-Selecciona-</option>
+                                    <option value="ger">Alemania</option>
+                                    <option value="arg">Argentina</option>
+                                    <option value="aus">Australia</option>
+                                    <option value="bra">Brasil</option>
+                                    <option value="can">Canadá</option>
+                                    <option value="chi">Chile</option>
+                                    <option value="chn">China</option>
+                                    <option value="cor">Corea del Sur</option>
+                                    <option value="ncor">Corea la Buena</option>
+                                    <option value="esp">España</option>
+                                    <option value="usa">Estados Unidos</option>
+                                    <option value="fra">Francia</option>
+                                    <option value="ita">Italia</option>
+                                    <option value="jap">Japón</option>
+                                    <option value="por">Portugal</option>
+                                    <option value="buk">Reino Unido</option>
+                                    <option value="rus">Rusia</option>
+                                    <option value="ven">Venezuela</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>DATOS DE CONSULTA</legend>
+                            <div class="selmotivo">
+                                <label for="motivo">Motivo de la consulta:</label>
+                                <select id="motivo" name="motivo">
+                                    <option value="" selected="selected">-Selecciona-</option>
+                                    <option value="itemknow">Quiero saber más sobre un producto.</option>
+                                    <option value="orders">Envíos internacionales.</option>
+                                    <option value="itemissue">Tengo un problema con un producto.</option>
+                                    <option value="orderissue">¿Problemas con algún pedido?</option>
+                                    <option value="razerknow">Quiero saber más de la empresa.</option>
+                                    <option value="cashback">Garantías, devoluciones, etc.</option>
+                                    <option value="other">Otro.</option>
+                                </select>
+                            </div>
+                            <div class="areaescritura">
+                                <label for="msg">Consulta:</label>
+                                <textarea class="" id="msg" name="mensaje" cols="40" rows="5" maxlength="1000" placeholder="Introduce tu mensaje." ></textarea>
+                            </div>
+                            <div class="checkboxes">
                                 <input id="suscripcion" name="boletin" type="checkbox" value="suscribir" checked="checked" /><label for="suscripcion">Quiero suscribirme al boletín de novedades y recibir ofertas promocionales.</label>
                                 <input id="terceros" name="share" type="checkbox" value="compartir" /><label for="terceros">Acepto compartir mis datos con terceros de confianza.</label>
                             </div>
-                            <div class="">
-                                Vía de Contacto:
-                                <div class="">
-                                            <input id="correo" type="radio" name="contacto" value="email" checked="checked" /> <label for="correo">Correo</label>
-                                </div>
-                                <div class="">
-                                            <input id="SMS" type="radio" name="contacto" value="SMS" /> <label for="SMS">SMS</label>
-                                </div>
-                            </div>
+                        </fieldset>
+                        <div class="botones">
                             <input class="boton" type="submit" value="Enviar" />
                             <input class="boton" type="reset" name="limpiar" value="Limpiar" />
-                        </fieldset>
+                        </div>
                     </form>
                 </div>
-                <div class="temp"></div>
             </article>
         </section>
         <div class="ref">
@@ -78,6 +136,7 @@
             </a>
         </div>
     </main>
+    <div class="banner"></div>
     <footer>
         <p>
             <a href="mailto:support@razer.com">Contactar por email.</a>
