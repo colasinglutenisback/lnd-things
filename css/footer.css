@@ -3,14 +3,14 @@ footer {
     width: 100%;
     background: url(../images/fiber2.jpg) repeat;
     justify-content: space-between;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     padding: 1%;
     align-self: flex-end;
 }
 
     footer * {
-        color: #44D62D;
+        color: #44D62C;
         font-size: 1rem;
     }
 

@@ -38,8 +38,12 @@
                 .formulario .fechanac>label,
                 .formulario .selmotivo>label {
                     width: 20%;
-                    align-self: flex-start;
+                    align-self: center;
                     font-weight: bold;
+                }
+
+                .formulario .textarea>label {
+                    align-self: flex-start;
                 }
 
                 .formulario .areaescritura>textarea,
@@ -116,5 +120,5 @@
                 .formulario .botones>.boton:hover {
                     cursor: pointer;
                     background-color: black;
-                    color: #44D62D;
+                    color: #44D62C;
                 }

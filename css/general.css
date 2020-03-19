@@ -17,17 +17,19 @@ body {
 }
 
     .tituloseccion {
-        padding: 3%;
+        font-family: 'Bungee Shade', cursive;
+        font-weight: normal;
+        padding: 2% 0;
         text-align: center;
         font-size: 5rem;
-        color: #44D62D;
+        color: #44D62C;
     }
 
     main {
         width: 80%;
         color: white;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        min-height: 90vh;
+        min-height: 95vh;
     }
 
         main * {
@@ -46,7 +48,7 @@ body {
                 border-radius: 50% 50%;
                 display: inline-flex;
                 justify-content: center;
-                background: radial-gradient(black 40%, #44D62D);
+                background: radial-gradient(black 40%, #44D62C);
                 transition: width .2s linear, height .2s linear;
             }
 
@@ -54,14 +56,14 @@ body {
                     width: 5vw;
                     height: 5vw;
                     font-size: 45px;
-                    background: radial-gradient(#44D62D 10%, black 70%);
+                    background: radial-gradient(#44D62C 10%, black 70%);
                     transition: width .2s linear, height .2s linear, font-size .2s linear;
                 }
 
                     .ref .top span {
                         font-size: 25px;
                         align-self: center;
-                        color: #44D62D;
+                        color: #44D62C;
                         transition: font-size .2s linear, color .2s linear;
                     }
 
@@ -78,7 +80,7 @@ body {
         z-index: -1;
         width: 100%;
         height: 50em;
-        background: url("../images/RazerChroma_3840x2160.png") no-repeat 50% 50%/cover;
+        background: url("../images/RazerChroma_3840x2160.png") no-repeat 50% 50% / cover;
     }
 
     .icon-cart:before {

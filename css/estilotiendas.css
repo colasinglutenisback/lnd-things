@@ -1,0 +1,112 @@
+.contvideo {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin: auto;
+    opacity: .3;
+}
+
+.contvideo>video {
+    margin: auto;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.infratitulo {
+    font-family: 'Play', sans-serif;
+    font-weight: normal;
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom:1%;
+}
+
+.textvisit {
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+.slider>input{
+	display: none;
+}
+
+.slider>.cont{
+	margin: 2% auto;
+	width: 700px;
+	height: 380px;
+	overflow: hidden;
+}
+
+.slider>.cont>.image{
+	width: 2800px;
+	height: 380px;
+}
+
+.slider>.cont>.image>img{
+	float: left;
+    width: 700px;
+}
+
+.cont .image{
+	animation: movimiento 20s linear infinite;
+}
+
+.tablatiendas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+table {
+    border: 3px solid black;
+    background-color: #333333;
+    color: #BBBBBB;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+thead>tr>th {
+    font-size: 2rem;
+    padding: 1%;
+}
+
+th, tr, td {
+    border: 2px solid whitesmoke;
+    border-collapse: collapse;
+    padding: 1%;
+}
+
+th {
+    width: 30%;
+}
+
+td.imagen {
+    width: 20%;
+    padding: 0;
+}
+
+td>img {
+    display: block;
+    width: 100%;
+}
+
+@keyframes movimiento{
+	0%{margin-left: 0px;}
+	23%{margin-left: 0px;}
+	25%{margin-left:-700px; }
+	48%{margin-left: -700px;}
+	50%{margin-left: -1400px;}
+	73%{margin-left: -1400px;}
+	75%{margin-left: -2100px;}
+	98%{margin-left: -2100px;}
+	100%{margin-left: 0px;}
+}

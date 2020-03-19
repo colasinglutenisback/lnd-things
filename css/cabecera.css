@@ -5,11 +5,10 @@ header {
     width: 100%;
     background: url(../images/fiber1.jpg) repeat;
     align-self: flex-start;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
-
-    header * {
-        font-family: "Arial Black", Gadget, sans-serif;
-    }
 
     header>.imgcabecera {
         width: 12%;
@@ -42,14 +41,14 @@ header {
             }
 
                 header>nav>.menu li>a {
-                    color: #44D62D;
+                    color: #44D62C;
                     padding: 5%;
                     display: block;
                     transition: color .5s linear, background-color .5s linear;
                 }
                     header>nav>.menu li>a:hover{
                         color: black;
-                        background-color: #44D62D;
+                        background-color: #44D62C;
                         transition: color .5s linear, background-color .5s linear;
                     }
 
