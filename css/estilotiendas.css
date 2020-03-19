@@ -1,16 +1,10 @@
 .contvideo {
     position: absolute;
     width: 100%;
-    height: 100vh;
     top: 0;
     left: 0;
     z-index: -1;
-    margin: auto;
     opacity: .3;
-}
-
-.contvideo>video {
-    margin: auto;
 }
 
 .intro {
@@ -21,92 +15,187 @@
     text-align: center;
 }
 
-.infratitulo {
-    font-family: 'Play', sans-serif;
-    font-weight: normal;
-    width: 100%;
-    font-size: 2rem;
-    margin-bottom:1%;
-}
+    .infratitulo {
+        font-family: 'Play', sans-serif;
+        font-weight: normal;
+        width: 100%;
+        font-size: 2rem;
+        margin-bottom:1%;
+    }
 
-.textvisit {
-    width: 70%;
-    font-size: 1.2rem;
-}
+    .textvisit {
+        width: 70%;
+        font-size: 1.2rem;
+    }
 
-.slider>input{
-	display: none;
-}
+    .slider>input{
+        display: none;
+    }
 
-.slider>.cont{
-	margin: 2% auto;
-	width: 700px;
-	height: 380px;
-	overflow: hidden;
-}
+    .slider>.cont{
+        margin: 2% auto;
+        width: 700px;
+        height: 380px;
+        overflow: hidden;
+    }
 
-.slider>.cont>.image{
-	width: 2800px;
-	height: 380px;
-}
+        .slider .image{
+            width: 2800px;
+            height: 380px;
+	        animation: movimiento 12s linear infinite;
+        }
 
-.slider>.cont>.image>img{
-	float: left;
-    width: 700px;
-}
+        .slider img{
+            float: right;
+            width: 700px;
+        }
 
-.cont .image{
-	animation: movimiento 20s linear infinite;
-}
+    .tablatiendas {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 2% 0;
+    }
 
-.tablatiendas {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 2% 0;
-}
+        .tablatiendas>table {
+            border: 3px solid black;
+            background-color: #333333;
+            color: #BBBBBB;
+            width: 80%;
+            border-collapse: collapse;
+        }
+            .tablatiendas>table * {
+                overflow: visible;
+            }
 
-table {
-    border: 3px solid black;
-    background-color: #333333;
-    color: #BBBBBB;
-    width: 80%;
-    border-collapse: collapse;
-}
+            .tablatiendas thead th {
+                font-size: 2rem;
+                padding: 1%;
+            }
 
-thead>tr>th {
-    font-size: 2rem;
-    padding: 1%;
-}
+            .tablatiendas tbody th,
+            .tablatiendas tbody tr,
+            .tablatiendas tbody td {
+                border: 2px solid whitesmoke;
+                border-collapse: collapse;
+                padding: 1%;
+            }
 
-th, tr, td {
-    border: 2px solid whitesmoke;
-    border-collapse: collapse;
-    padding: 1%;
-}
+            .tablatiendas tbody th {
+                width: 25%;
+            }
 
-th {
-    width: 30%;
-}
+            .tablatiendas tbody .imagen {
+                width: 25%;
+                padding: 0;
+            }
 
-td.imagen {
-    width: 20%;
-    padding: 0;
-}
+                .tablatiendas .contenedor {
+                    width: 100%;
+                    height: 7em;
+                    perspective: 500px;
+                }
 
-td>img {
-    display: block;
-    width: 100%;
-}
+                    .tablatiendas .contenedor>.tarjeta {
+                        width: 100%;
+                        height: 7em;
+                        position: relative;
+                        transition: transform 1s;
+                        transform-style: preserve-3d;
+                    }
+                        .tablatiendas .contenedor:hover .tarjeta {
+                            transform: rotate3d(0,1,0,180deg);
+                        }
+
+                            .tablatiendas .contenedor .uno {
+                                background: url(../images/store1.png) no-repeat;
+                            }
+
+                            .tablatiendas .contenedor .dos {
+                                background: url(../images/store2.jpg) no-repeat;
+                                filter: brightness(10);
+                            }
+
+                            .tablatiendas .contenedor .tres {
+                                background: url(../images/store3.jpg) no-repeat;
+                                filter: contrast(25%);
+                            }
+
+                            .tablatiendas .contenedor .cuatro {
+                                background: url(../images/store4.png) no-repeat;
+                                filter: invert(1);
+                            }
+
+                            .tablatiendas .contenedor .cinco {
+                                background: url(../images/store2.jpg) no-repeat;
+                                filter: sepia(1);
+                            }
+
+                            .tablatiendas .contenedor .seis {
+                                background: url(../images/store1.png) no-repeat;
+                                filter: saturate(2000%);
+                            }
+
+                            .tablatiendas .contenedor .siete {
+                                background: url(../images/store4.png) no-repeat;
+                                filter: grayscale(1);
+                            }
+
+                            .tablatiendas .contenedor .ocho {
+                                background: url(../images/store3.jpg) no-repeat;
+                                filter: invert(.8) saturate(700%);
+                            }
+
+                            .tablatiendas .contenedor .nueve {
+                                background: url(../images/store1.png) no-repeat;
+                                filter: blur(.3rem);
+                            }
+
+                            .tablatiendas .contenedor .diez {
+                                background: url(../images/store4.png) no-repeat;
+                                filter: drop-shadow(20px 20px);
+                            }
+
+                            .tablatiendas .contenedor .frontal,
+                            .tablatiendas .contenedor .trasera {
+                                display: block;
+                                position: absolute;
+                                backface-visibility: hidden;
+                                width: 100%;
+                                height: 100%;
+                                background-size: 100%;
+                            }
+
+                            .tablatiendas .contenedor .trasera {
+                                transform: rotateY(180deg);
+                            }
 
 @keyframes movimiento{
-	0%{margin-left: 0px;}
-	23%{margin-left: 0px;}
-	25%{margin-left:-700px; }
-	48%{margin-left: -700px;}
-	50%{margin-left: -1400px;}
-	73%{margin-left: -1400px;}
-	75%{margin-left: -2100px;}
-	98%{margin-left: -2100px;}
-	100%{margin-left: 0px;}
+	0%{
+        margin-left: 0px;
+    }
+	22%{
+        margin-left: 0px;
+    }
+	25%{
+        margin-left:-700px;
+    }
+	47%{
+        margin-left: -700px;
+    }
+    50%{
+        margin-left: -1400px;
+    }
+    72%{
+        margin-left: -1400px;
+    }
+    75%{
+        margin-left: -2100px;
+    }
+    97%{
+        margin-left: -2100px;
+    }
+    100%{
+        margin-left: 0px;
+    }
 }
