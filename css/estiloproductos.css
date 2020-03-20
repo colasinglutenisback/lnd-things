@@ -114,6 +114,6 @@
                             background-color: green;
                         }
 
-                        .carro>span {
+                        .carro>.fa-cart-arrow-down {
                             margin-right: 5%;
                         }
