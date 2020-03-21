@@ -1,8 +1,20 @@
 .fondo {
     width: 100%;
-    height: 25em;
-    background: url(../images/razer.jpg) no-repeat 50% 50% / cover;
+    height: 50em;
+    background: url(../images/fondocab.jpg) no-repeat 50% 50% / cover;
 }
+
+    .fondo>.slogan {
+        width: 100%;
+        position: absolute;
+        top: 14em;
+        left: 3%;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 3rem;
+        color: #44D62C;
+        text-shadow: 0 0 15px black;
+        filter: drop-shadow(0 0 10px black);
+    }
 
     header {
         background: url(../images/fiber1index.jpg) repeat-x;

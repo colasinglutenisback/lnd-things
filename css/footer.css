@@ -14,11 +14,14 @@ footer {
         font-size: 1rem;
     }
 
+    footer>.mail {
+        width: 15%;
+    }
+
     footer>.redes{
         display: inline-flex;
         width: 15%;
         flex-flow: row nowrap;
-        margin-right: 3%;
     }
 
         footer>.redes>.rrss {
