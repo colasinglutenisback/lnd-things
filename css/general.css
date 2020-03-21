@@ -107,9 +107,3 @@ a {
     94% {text-shadow: 0 0 15px orange;}
     100% {text-shadow: 0 0 15px red;}
 }
-
-@media screen and (max-width: 1280px) {
-    * {
-        display: none;
-    }
-}
