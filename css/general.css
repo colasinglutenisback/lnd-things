@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +16,10 @@ body {
     background: url(../images/fondo.gif) repeat;
 }
 
+a {
+    text-decoration: none;
+}
+
     .tituloseccion {
         font-family: 'Bungee Shade', cursive;
         font-weight: normal;
@@ -23,6 +27,7 @@ body {
         text-align: center;
         font-size: 5rem;
         color: #44D62C;
+        animation: colors2 5s linear infinite;
     }
 
     main {
@@ -31,10 +36,6 @@ body {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         min-height: 95vh;
     }
-
-        main * {
-            overflow: hidden;
-        }
 
         .ref {
             position: fixed;
@@ -80,7 +81,7 @@ body {
         z-index: -1;
         width: 100%;
         height: 50em;
-        background: url("../images/RazerChroma_3840x2160.png") no-repeat 50% 50% / cover;
+        background: url("../images/imagefooter.png") no-repeat 50% 50% / cover;
     }
 
 @keyframes colors {
@@ -93,4 +94,22 @@ body {
     79% {box-shadow: 0 0 10px 5px yellow;}
     94% {box-shadow: 0 0 10px 5px orange;}
     100% {box-shadow: 0 0 10px 5px red;}
+}
+
+@keyframes colors2 {
+    0% {text-shadow: 0 0 15px red;}
+    8% {text-shadow: 0 0 15px purple;}
+    23% {text-shadow: 0 0 15px darkblue;}
+    37% {text-shadow: 0 0 15px skyblue;}
+    51% {text-shadow: 0 0 15px turquoise;}
+    64% {text-shadow: 0 0 15px #44D62C;}
+    79% {text-shadow: 0 0 15px yellow;}
+    94% {text-shadow: 0 0 15px orange;}
+    100% {text-shadow: 0 0 15px red;}
+}
+
+@media screen and (max-width: 1280px) {
+    * {
+        display: none;
+    }
 }

@@ -1,0 +1,100 @@
+section {
+    margin-bottom: 5%;
+}
+
+    .seccion {
+        font-size: 2.5rem;
+        font-family: 'Play', cursive;
+        margin-top: 3%;
+        width: 100%;
+        color: #44D62C;
+    }
+
+    article {
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 1.2rem;
+    }
+
+        .titular {
+            font-size: 1.5rem;
+            font-family: 'Barlow Semi Condensed', cursive;
+            margin: 2% 0 1% 2%;
+            width: 100%;
+            color: white;
+        }
+
+        .novvid {
+            width: 100%;
+            display: inline-flex;
+            flex-flow: row nowrap;
+        }
+
+            .vid {
+                width: 40%;
+                display: inline-block;
+            }
+
+                video {
+                    width: 100%;
+                    animation: colors 5s linear infinite;
+                }
+
+        .frases {
+            width: 60%;
+            align-self: center;
+            margin-left: 3%;
+        }
+
+            blockquote, cite {
+                display: inline-block;
+            }
+
+                cite {
+                    margin-left: 3%;
+                }
+
+        .evebus {
+            width: 100%;
+            display: inline-flex;
+            flex-flow: row nowrap;
+        }
+
+            .contenedor {
+                width: 60%;
+                height: 350px;
+                perspective: 1000px;
+            }
+                    .contenedor:hover .tarjeta {
+                        transform: rotateY(180deg);
+                    }
+
+                .tarjeta {
+                    position: relative;
+                    transition: transform 1s ease-in-out;
+                    transform-style: preserve-3d;
+                }
+
+                    .frontal {
+                    background: url(../images/bus1.jpg) no-repeat;
+                    animation: colors 5s linear infinite;
+                    }
+
+                    .trasera { 
+                        background: url(../images/bus2.jpg) no-repeat 50% 50% / cover;
+                        animation: colors 5s linear infinite;
+                        transform: rotateY(180deg);
+                    }
+
+                    .frontal, .trasera {
+                        position: absolute;
+                        width: 100%;
+                        height: 350px;
+                        background-size: 100%;
+                    }
+
+            .venbus {
+                width: 40%;
+                margin: 0 2%;
+                align-self: center;
+            }
