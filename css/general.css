@@ -83,25 +83,6 @@ body {
         background: url("../images/RazerChroma_3840x2160.png") no-repeat 50% 50% / cover;
     }
 
-    .icon-cart:before {
-        content: "\e93a";
-    }
-    .icon-arrow-up2:before {
-        content: "\ea3a";
-    }
-    .icon-facebook2:before {
-        content: "\ea91";
-    }
-    .icon-instagram:before {
-        content: "\ea92";
-    }
-    .icon-twitter:before {
-        content: "\ea96";
-    }
-    .icon-youtube:before {
-        content: "\ea9d";
-    }
-
 @media screen and (min-width: 1280px) {
     html {
         font-size: 1rem;
@@ -120,4 +101,16 @@ body {
     *::placeholder {
         font-size: .8rem;
     }
+}
+
+@keyframes colors {
+    0% {box-shadow: 0 0 10px 5px red;}
+    8% {box-shadow: 0 0 10px 5px purple;}
+    23% {box-shadow: 0 0 10px 5px darkblue;}
+    37% {box-shadow: 0 0 10px 5px skyblue;}
+    51% {box-shadow: 0 0 10px 5px turquoise;}
+    64% {box-shadow: 0 0 10px 5px #44D62C;}
+    79% {box-shadow: 0 0 10px 5px yellow;}
+    94% {box-shadow: 0 0 10px 5px orange;}
+    100% {box-shadow: 0 0 10px 5px red;}
 }
