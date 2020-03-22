@@ -1,12 +1,14 @@
 footer {
     display: inline-flex;
     width: 100%;
-    background: url(../images/fiber2.jpg) repeat;
     justify-content: space-between;
+    background: url(../images/fiber2.jpg) 50% 50% / cover;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     padding: 1%;
     align-self: flex-end;
+    text-align: center;
+    flex-flow: row nowrap;
 }
 
     footer * {
@@ -14,13 +16,13 @@ footer {
         font-size: 1rem;
     }
 
-    footer>.mail {
-        width: 15%;
+    footer a:hover,
+    footer a:hover .fab {
+        color: green;
     }
 
     footer>.redes{
         display: inline-flex;
-        width: 15%;
         flex-flow: row nowrap;
     }
 
@@ -29,10 +31,48 @@ footer {
             text-align: center;
         }
 
-            footer>.redes>.rrss>a {
-                padding: 20%;
+            .redes>.rrss>a {
+                padding: 10%;
             }
 
                 footer .fab {
-                    font-size: 1.2rem;
+                    font-size: 1.5rem;
                 }
+
+@media screen and (min-width: 1281px) {
+    .redes, .mail {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:1280px) {
+    .redes, .mail {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        flex-flow: row wrap;
+        background-size: cover;
+        align-items: center;
+    }
+
+        footer * {
+            font-size: 1rem;
+        }
+
+            footer .redes,
+            footer .mail {
+                width: 50%;
+            }
+
+            footer .redes {
+                margin: 3% 0;
+            }
+
+            footer .copy {
+                order: 1;
+                width: 100%;
+            }
+}

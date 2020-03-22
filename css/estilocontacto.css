@@ -6,7 +6,6 @@
 }
 
     .formulario>form {
-        width: 65%;
         background-color: grey;
         border-radius: 15px;
         animation: colors 5s linear infinite;
@@ -37,7 +36,6 @@
                 .formulario .selpais>label,
                 .formulario .fechanac>label,
                 .formulario .selmotivo>label {
-                    width: 20%;
                     align-self: center;
                     font-weight: bold;
                 }
@@ -50,7 +48,6 @@
                 .formulario .areaescritura>input,
                 .formulario .selpais>select,
                 .formulario .selmotivo>select {
-                    width: 80%;
                     border-radius: 5px;
                     background-color: #333333;
                     color: whitesmoke;
@@ -62,7 +59,6 @@
                     }
 
                 .formulario .fechanac>.rest {
-                    width: 80%;
                     display: flex;
                     justify-content: space-between;
                     flex-flow: row nowrap;
@@ -71,7 +67,6 @@
 
                     .formulario .fechanac>.rest>input,
                     .formulario .fechanac>.rest>select {
-                        width: 30%;
                         border-radius: 5px;
                         background-color: #333333;
                         color: whitesmoke;
@@ -80,6 +75,7 @@
 
                 .formulario .areaescritura>input,
                 .formulario .selpais>select,
+                .formulario .selmotivo>select,
                 .formulario .fechanac>.rest>input,
                 .formulario .fechanac>.rest>select {
                     height: 2em;
@@ -99,10 +95,13 @@
                 .formulario .checkboxes>input {
                     width: 5%;
                     cursor: pointer;
+                    margin-top: 2%;
                 }
 
                 .formulario .checkboxes>label {
                     width: 95%;
+                    cursor: pointer;
+                    margin-top: 2%;
                 }
 
         .formulario .botones {
@@ -114,12 +113,115 @@
         }
 
             .formulario .botones>.boton {
-                width: 20%;
-                height: 2em;
                 border-radius: 5px;
+                background-color: lightgray;
             }
                 .formulario .botones>.boton:hover {
                     cursor: pointer;
                     background-color: black;
                     color: #44D62C;
                 }
+
+@media screen and (min-width:1281px) {    
+    form {
+        width: 75%;
+    }
+
+    .formulario .areaescritura>label,
+    .formulario .selpais>label,
+    .formulario .fechanac>label,
+    .formulario .selmotivo>label {
+        width: 30%;
+    }
+
+    .formulario .areaescritura>textarea,
+    .formulario .areaescritura>input,
+    .formulario .selpais>select,
+    .formulario .selmotivo>select,
+    .formulario .fechanac>.rest {
+        width: 80%;
+    }
+
+    .formulario .fechanac>.rest>input,
+    .formulario .fechanac>.rest>select {
+        width: 30%;
+    }
+
+    .formulario .botones>.boton {
+        width: 20%;
+        height: 2em;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:1280px) {
+    form {
+        width: 80%;
+    }
+
+    .formulario .areaescritura>label,
+    .formulario .selpais>label,
+    .formulario .fechanac>label,
+    .formulario .selmotivo>label {
+        width: 30%;
+        margin: 2% 0;
+    }
+
+    .formulario .areaescritura>textarea,
+    .formulario .areaescritura>input,
+    .formulario .selpais>select,
+    .formulario .selmotivo>select,
+    .formulario .fechanac>.rest {
+        width: 70%;
+    }
+
+    .formulario .fechanac>.rest>input,
+    .formulario .fechanac>.rest>select {
+        width: 25%;
+    }
+
+    .formulario .botones>.boton {
+        width: 30%;
+        height: 3em;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    form {
+        width: 100%;
+    }
+
+    .formulario .areaescritura,
+    .formulario .fechanac,
+    .formulario .selpais,
+    .formulario .selmotivo {
+        flex-flow: row wrap;
+    }
+
+    .formulario .areaescritura>label,
+    .formulario .selpais>label,
+    .formulario .fechanac>label,
+    .formulario .selmotivo>label {
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    .formulario .areaescritura>textarea,
+    .formulario .areaescritura>input,
+    .formulario .selpais>select,
+    .formulario .selmotivo>select,
+    .formulario .fechanac>.rest {
+        width: 100%;
+    }
+
+    .formulario .fechanac>.rest>input,
+    .formulario .fechanac>.rest>select {
+        width: 25%;
+    }
+
+    .formulario .botones>.boton {
+        width: 80%;
+        height: 2em;
+        margin-bottom: 2%;
+    }
+}

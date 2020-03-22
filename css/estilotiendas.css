@@ -1,13 +1,15 @@
 .contvideo {
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
     opacity: .3;
+    overflow: hidden;
 }
 
     video {
-        width: 100%;
+        height: 100%;
     }
 
 .intro {
@@ -43,26 +45,25 @@ section {
         }
 
         .slider>.cont{
-            margin: 2% auto;
-            width: 700px;
-            height: 380px;
+            margin: 5% auto 3% auto;
+            width: 60%;
             overflow: hidden;
             animation: colors 5s linear infinite;
         }
 
             .slider .image{
-                width: 2800px;
-                height: 380px;
+                width: 400%;
+                height: 100%;
                 animation: movimiento 12s linear infinite;
             }
 
                 .slider img{
                     float: right;
-                    width: 700px;
+                    width: 25%;
+                    height: 100%;
                 }
 
     .tablita {
-        width: 80%;
         display: inline-flex;
         flex-flow: row wrap;
         border: 3px solid black;
@@ -74,32 +75,25 @@ section {
 
         .titabla {
             width: 100%;
-            font-size: 2rem;
             padding: 1%;
             text-align: center;
-
         }
 
         .tienda {
             width: 100%;
             display: inline-flex;
-            flex-flow: row nowrap;
-            align-content: center;
-            border-top: 2px solid whitesmoke;
+            border-top: 3px solid whitesmoke;
         }
 
             .nombretienda {
-                width: 25%;
                 padding: 1%;
                 text-align: center;
                 align-self: center;
+                color: whitesmoke;
             }
 
             .imgtienda {
-                width: 25%;
-                height: 8em;
                 border-left: 2px solid whitesmoke;
-                border-right: 2px solid whitesmoke;
             }
 
                 .uno {
@@ -138,34 +132,166 @@ section {
                     }
 
             .dir {
-                width: 50%;
                 display: inline-flex;
-                flex-flow: row wrap;
             }
 
                 .dir>.lineadir {
-                    width: 100%;
-                    height: 4em;
                     display: inline-flex;
                 }
 
                     .lineadir>p {
+                        width: 100%;
                         align-self: center;
                         padding: 0 3%;
                     }
 
-                    .sup {
-                        border-bottom: 2px solid whitesmoke;
-                    }
-
 @keyframes movimiento{
-	0%{ margin-left: 0px; }
-	22%{ margin-left: 0px; }
-	25%{ margin-left:-700px; }
-	47%{ margin-left: -700px; }
-    50%{ margin-left: -1400px; }
-    72%{ margin-left: -1400px; }
-    75%{ margin-left: -2100px; }
-    97%{ margin-left: -2100px; }
-    100%{ margin-left: 0px; }
+	0%{ margin-left: 0; }
+	22%{ margin-left: 0; }
+	25%{ margin-left:-100%; }
+	47%{ margin-left: -100%; }
+    50%{ margin-left: -200%; }
+    72%{ margin-left: -200%; }
+    75%{ margin-left: -200%; }
+    97%{ margin-left: -200%; }
+    100%{ margin-left: 0; }
+}
+
+@media screen and (min-width:1281px) {
+        .slider>.cont{
+            width: 50vw;
+            height: 25vw;
+        }
+
+    .tablita {
+        width: 80%;
+    }
+
+        .titabla {
+            font-size: 2rem;
+        }
+
+        .tienda {
+            flex-flow: row nowrap;
+        }
+
+        .nombretienda {
+            width: 25%;
+        }
+
+        .imgtienda {
+            width: 25%;
+            height: 8em;
+            border-right: 2px solid whitesmoke;
+        }
+
+    .sup {
+        border-bottom: 2px solid whitesmoke;
+    }
+
+    .dir {
+        width: 50%;
+        flex-flow: row wrap;
+    }
+
+        .dir>.lineadir {
+            width: 100%;
+            height: 4em;
+        }
+}
+
+@media screen and (min-width:501px) and (max-width:1280px) {
+        .slider>.cont{
+            width: 70vw;
+            height: 35vw;
+        }
+
+    .tablita {
+        width: 90%;
+    }
+
+        .titabla {
+            font-size: 1.6rem;
+        }
+
+        .tienda {
+            flex-flow: row wrap;
+        }
+
+            .nombretienda {
+                width: 40%;
+            }
+
+            .imgtienda {
+                width: 60%;
+                height: 12em;
+            }
+
+            .dir {
+                width: 100%;
+                flex-flow: row nowrap;
+                border-top: 2px solid whitesmoke;
+            }
+
+                .dir>.lineadir {
+                    height: 4.5em;
+                    text-align: center;
+                }
+
+                .dir>.sup {
+                    width: 40%;
+                }
+
+                .bot {
+                    width: 60%;
+                    border-left: 2px solid whitesmoke;
+                }
+}
+
+@media screen and (max-width:500px) {
+        .slider>.cont{
+            width: 90vw;
+            height: 45vw;
+        }
+
+    .tablita {
+        width: 95%;
+    }
+
+        .titabla {
+            font-size: 1.3rem;
+        }
+
+        .tienda {
+            flex-flow: row wrap;
+        }
+
+            .nombretienda {
+                width: 40%;
+            }
+
+            .imgtienda {
+                width: 60%;
+                height: 10em;
+            }
+
+            .dir {
+                width: 100%;
+                flex-flow: row nowrap;
+                border-top: 2px solid whitesmoke;
+            }
+
+                .dir>.lineadir {
+                    height: 5em;
+                    text-align: center;
+                }
+
+                .dir>.sup {
+                    width: 40%;
+                }
+
+                .dir>.bot {
+                    width: 60%;
+                    border-left: 2px solid whitesmoke;
+                }
 }
