@@ -27,42 +27,28 @@ section {
         .novvid {
             width: 100%;
             display: inline-flex;
-            flex-flow: row nowrap;
         }
 
-            .vid {
-                width: 40%;
-                display: inline-block;
+            video {
+                width: 100%;
+                animation: colors 5s linear infinite;
             }
 
-                video {
-                    width: 100%;
-                    animation: colors 5s linear infinite;
-                }
-
         .frases {
-            width: 60%;
             align-self: center;
             margin-left: 3%;
         }
 
-            blockquote, cite {
-                display: inline-block;
+            cite {
+                margin-left: 3%;
             }
-
-                cite {
-                    margin-left: 3%;
-                }
 
         .evebus {
             width: 100%;
             display: inline-flex;
-            flex-flow: row nowrap;
         }
 
             .contenedor {
-                width: 60%;
-                height: 350px;
                 perspective: 1000px;
             }
                     .contenedor:hover .tarjeta {
@@ -76,7 +62,7 @@ section {
                 }
 
                     .frontal {
-                    background: url(../images/bus1.jpg) no-repeat;
+                    background: url(../images/bus1.jpg) no-repeat 50% 50% / cover;
                     animation: colors 5s linear infinite;
                     }
 
@@ -88,13 +74,137 @@ section {
 
                     .frontal, .trasera {
                         position: absolute;
-                        width: 100%;
-                        height: 350px;
-                        background-size: 100%;
                     }
 
             .venbus {
-                width: 40%;
-                margin: 0 2%;
                 align-self: center;
             }
+
+@media screen and (min-width:1281px) {
+    .novvid {
+        flex-flow: row nowrap;
+    }
+
+        .vid {
+            width: 40%;
+        }
+
+        .frases {
+            width: 60%;
+        }
+
+            blockquote, cite {
+                display: inline;
+            }
+
+            .evebus {
+                flex-flow: row nowrap;
+            }
+    
+                .contenedor {
+                    width: 45vw;
+                    height: 20vw;
+                }
+    
+                        .frontal, .trasera {
+                            position: absolute;
+                            width: 45vw;
+                            height: 20vw;
+                            background-size: 100%;
+                        }
+    
+                .venbus {
+                    width: 40%;
+                    margin: 0 2%;
+                }
+}
+
+@media screen and (min-width:501px) and (max-width:1280px) {
+    .novvid {
+        flex-flow: column nowrap;
+    }
+
+        .vid {
+            width: 60%;
+            margin: 1% auto;
+        }
+
+        .frases {
+            width: 90%;
+            display: inline-flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+            .line {
+                width: 45%;
+                margin: 2% 2%;
+            }
+
+            blockquote, cite {
+                display: block;
+            }
+
+            .evebus {
+                flex-flow: row wrap;
+            }
+    
+                .contenedor {
+                    width: 65vw;
+                    height: 30vw;
+                    margin: 3% auto;
+                }
+    
+                        .frontal, .trasera {
+                            width: 65vw;
+                            height: 30vw;
+                        }
+    
+                .venbus {
+                    width: 60%;
+                    margin:auto;
+                }
+}
+
+@media screen and (max-width:500px) {
+    .novvid {
+        flex-flow: row wrap;
+    }
+
+        .vid {
+            width: 80%;
+            margin: 2% auto;
+        }
+
+        .frases {
+            width: 100%;
+        }
+
+            .line {
+                margin: 3% 10%;
+            }
+
+            blockquote, cite {
+                display: block;
+            }
+
+            .evebus {
+                flex-flow: row wrap;
+            }
+    
+                .contenedor {
+                    width: 85vw;
+                    height: 40vw;
+                    margin: 3% auto;
+                }
+    
+                        .frontal, .trasera {
+                            width: 85vw;
+                            height: 40vw;
+                        }
+    
+                .venbus {
+                    width: 100%;
+                    margin: 3% 5% 10% 5%;
+                }
+}
