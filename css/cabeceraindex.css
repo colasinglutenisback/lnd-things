@@ -19,14 +19,6 @@
         z-index: 10;
     }
 
-        header>nav>.menu li>a {
-            padding: 8%;
-        }
-
-            header>nav>.menu>li:hover li {
-                background: url(../images/fiber1index.jpg) repeat-x;
-            }
-
 @media screen and (min-width:1281px) {
     .fondo {
         height: 50em;
@@ -36,6 +28,14 @@
         top: 14em;
         font-size: 3rem;
     }
+
+    header>nav>.menu li>a {
+        padding: 8%;
+    }
+
+        header>nav>.menu>li:hover li {
+            background: url(../images/fiber1index.jpg) repeat-x;
+        }
 }
 
 @media screen and (min-width:501px) and (max-width:1280px) {

@@ -4,39 +4,53 @@ header {
     align-content: space-between;
     width: 100%;
     background: url(../images/fiber1.jpg) repeat;
-    align-self: flex-start;
     font-family: 'Play', sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+header * {
+    z-index: 5;
+}
+
+header a {
+    display: block;
+    color: white;
+}
+
+    header>nav>.menu {
+        display: inline-flex;
+        width: 100%;
+    }
+
+        header ul {
+            list-style: none;
+        }
+
+@media screen and (min-width: 1280px) {
+    .opener, .hamb {
+        display: none;
+    }
+
     header>.imgcabecera {
         width: 12%;
         align-self: center;
     }
 
-        header>.imgcabecera img {
-            width: 100%;
-        }
+    header>.imgcabecera img {
+        width: 100%;
+    }
 
     header>nav {
         width: 88%;
         align-self: center;
     }
 
-        header>nav ul {
-            list-style: none;
-        }
-
-        header>nav>.menu {
-            display: inline-flex;
-            width: 100%;
-        }
-
             header>nav>.menu>li {
                 text-align: center;
                 vertical-align: top;
                 display: inline-block;
-                width: 25%;
+                width: 100%;
             }
 
                 header>nav>.menu li>a {
@@ -68,21 +82,168 @@ header {
                         transition: all .5s linear;
                         background: url(../images/fiber1.jpg) repeat;
                     }
-
-@media screen and (min-width: 1280px) {
-    header>.hamb {
-        display: none;
-    }
 }
 
 @media screen and (min-width: 500px) and (max-width: 1280px) {
     header {
         font-size: 1rem;
+        height: 5em;
     }
+
+        header .opener,
+        header .hamb {
+            width: 5em;
+            height: 5em;
+        }
+
+        header .opener {
+            width: 6em;
+            height: 6em;
+            position: absolute;
+            z-index: 2;
+            opacity: 0;
+            cursor: pointer;
+        }
+            header .opener:checked ~ nav {
+                margin-left: -100%;
+                transition: .3s linear;
+            }
+
+        header .hamb {
+            z-index: 1;
+            background-color: gray;
+            animation: colors 5s linear infinite;
+        }
+
+            header .hamb>.fa-bars {
+                font-size: 4.2rem;
+                margin: 10% 0 0 12%
+            }
+
+        header>.imgcabecera {
+            flex-grow: 1;
+            height: 5em;
+            align-self: center;
+        }
+
+            header>.imgcabecera>a {
+                width: 100%;
+            }
+
+            header>.imgcabecera img {
+                height: 5em;
+                justify-self: center;
+            }
+
+        header>nav {
+            width: 80%;
+            position: absolute;
+            top: 0;
+            left: 5em;
+            background-color: gray;
+            border: 1px solid black;
+            transition: .3s linear;
+            text-align: center;
+        }
+
+            header>nav a {
+                padding: 5%;
+            }
+                header>nav a:hover {
+                    background-color: #333333;
+                }
+
+            header>nav ul {
+                display: inline-flex;
+                flex-flow: row wrap;
+            }
+
+            header>nav li {
+                width: 100%;
+            }
+
+                header>nav li>ul {
+                    display: block;
+                }
 }
 
 @media screen and (max-width: 500px) {
     header {
         font-size: .8rem;
+        height: 3em;
     }
+
+        header .opener,
+        header .hamb {
+            width: 3em;
+            height: 3em;
+        }
+
+        header .opener {
+            position: absolute;
+            z-index: 2;
+            opacity: 0;
+            cursor: pointer;
+        }
+            header .opener:checked ~ nav {
+                margin-left: -100%;
+                transition: .3s linear;
+            }
+
+        header .hamb {
+            z-index: 1;
+            background-color: gray;
+            animation: colors 5s linear infinite;
+        }
+
+            header .hamb>.fa-bars {
+                font-size: 2rem;
+                margin: 10% 0 0 10%
+            }
+
+        header>.imgcabecera {
+            flex-grow: 1;
+            height: 3em;
+            align-self: center;
+        }
+
+            header>.imgcabecera>a {
+                width: 100%;
+            }
+
+            header>.imgcabecera img {
+                height: 3em;
+                justify-self: center;
+            }
+
+        header>nav {
+            width: 80%;
+            position: absolute;
+            top: 0;
+            left: 3em;
+            background-color: gray;
+            border: 1px solid black;
+            transition: .3s linear;
+            text-align: center;
+        }
+
+            header>nav a {
+                padding: 5%;
+            }
+                header>nav a:hover {
+                    background-color: #333333;
+                }
+
+            header>nav ul {
+                display: inline-flex;
+                flex-flow: row wrap;
+            }
+
+            header>nav li {
+                width: 100%;
+            }
+
+                header>nav li>ul {
+                    display: block;
+                }
 }
