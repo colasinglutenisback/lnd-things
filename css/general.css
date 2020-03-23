@@ -23,7 +23,6 @@ a {
     .tituloseccion {
         font-family: 'Bungee Shade', cursive;
         font-weight: normal;
-        padding: 2% 0;
         text-align: center;
         color: #44D62C;
         animation: colors2 5s linear infinite;
@@ -98,7 +97,8 @@ a {
     }
 
         .tituloseccion {
-            font-size: 4rem;
+            font-size: 5rem;
+            padding: 3% 0 0 0;
         }
 
             .ref .top:hover {
@@ -121,25 +121,17 @@ a {
 
         .tituloseccion {
             font-size: 3.3rem;
+            padding: 1.2em 0 0 0;
         }
 }
 
-@media screen and (min-width:396px) and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     main {
         width: 95%;
+        padding: 4em 0 0 0;
     }
 
         .tituloseccion {
             font-size: 2.2rem;
-        }
-}
-
-@media screen and (max-width: 395px) {
-    main {
-        width: 99%;
-    }
-
-        .tituloseccion {
-            font-size: 1.5rem;
         }
 }

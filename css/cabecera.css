@@ -7,9 +7,6 @@ header {
     font-family: 'Play', sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
-}
-
-header * {
     z-index: 5;
 }
 
@@ -89,10 +86,10 @@ header a {
                     }
 }
 
-@media screen and (min-width: 500px) and (max-width: 1280px) {
+@media screen and (min-width: 501px) and (max-width: 1280px) {
     header {
         font-size: 1rem;
-        height: 6em;
+        height: 5em;
         position: fixed;
         top: 0;
         left: 0;
@@ -100,13 +97,13 @@ header a {
 
         header .opener,
         header .hamb {
-            width: 6em;
-            height: 6em;
+            width: 5em;
+            height: 5em;
         }
 
         header .opener {
-            width: 7.5em;
-            height: 7.5em;
+            width: 6em;
+            height: 6em;
             position: absolute;
             z-index: 2;
             opacity: 0;
@@ -124,14 +121,16 @@ header a {
         }
 
             header .hamb>.fa-bars {
-                font-size: 5rem;
+                font-size: 4.2rem;
                 margin: 10% 0 0 12%
             }
 
         header>.imgcabecera {
             flex-grow: 1;
-            height: 6em;
+            height: 5em;
+            width: 10%;
             align-self: center;
+            display: inline-flex;
         }
 
             header>.imgcabecera>a {
@@ -139,7 +138,7 @@ header a {
             }
 
             header>.imgcabecera img {
-                height: 6em;
+                height: 100%;
                 justify-self: center;
             }
 
@@ -147,7 +146,7 @@ header a {
             width: 50%;
             position: absolute;
             top: 0;
-            left: 6em;
+            left: 5em;
             background-color: gray;
             border: 1px solid black;
             transition: .3s linear;
@@ -155,7 +154,7 @@ header a {
         }
 
             header>nav a {
-                padding: 2.3em;
+                padding: 1.8em;
                 border-top: 1px solid black;
                 border-bottom: 1px solid black;
             }
@@ -218,15 +217,18 @@ header a {
             flex-grow: 1;
             height: 6em;
             align-self: center;
+            width: 10%;
+            display: inline-flex;
         }
 
             header>.imgcabecera>a {
                 width: 100%;
+                display: inline-flex;
+                align-content: center;
             }
 
             header>.imgcabecera img {
-                height: 6em;
-                justify-self: center;
+                width: 100%;
             }
 
         header>nav {

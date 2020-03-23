@@ -24,12 +24,10 @@
         font-family: 'Play', sans-serif;
         font-weight: normal;
         width: 100%;
-        font-size: 2rem;
         margin-bottom:1%;
     }
 
     .textvisit {
-        width: 70%;
         font-size: 1.2rem;
     }
 
@@ -158,6 +156,14 @@ section {
 }
 
 @media screen and (min-width:1281px) {
+    .infratitulo {
+        font-size: 2rem;
+    }
+
+    .textvisit {
+        width: 70%;
+    }
+
         .slider>.cont{
             width: 50vw;
             height: 25vw;
@@ -201,6 +207,14 @@ section {
 }
 
 @media screen and (min-width:501px) and (max-width:1280px) {
+    .infratitulo {
+        font-size: 1.9rem;
+    }
+
+    .textvisit {
+        width: 80%;
+    }
+
         .slider>.cont{
             width: 70vw;
             height: 35vw;
@@ -249,6 +263,14 @@ section {
 }
 
 @media screen and (max-width:500px) {
+    .infratitulo {
+        font-size: 1.7rem;
+    }
+
+    .textvisit {
+        width: 90%;
+    }
+
         .slider>.cont{
             width: 90vw;
             height: 45vw;
