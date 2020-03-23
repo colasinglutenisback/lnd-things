@@ -14,8 +14,6 @@
     }
 
     header {
-        background: url(../images/fiber1index.jpg) repeat-x;
-        position: absolute;
         z-index: 10;
     }
 
@@ -55,7 +53,7 @@
     }
 
     .fondo>.slogan {
-        top: 2em;
+        top: 2.4em;
         font-size: 2rem;
     }
 }
