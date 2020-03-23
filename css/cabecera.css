@@ -87,25 +87,23 @@ header a {
 @media screen and (min-width: 500px) and (max-width: 1280px) {
     header {
         font-size: 1rem;
-        height: 5em;
+        height: 3.6em;
     }
 
         header .opener,
         header .hamb {
-            width: 5em;
-            height: 5em;
+            width: 3.6em;
+            height: 3.6em;
         }
 
         header .opener {
-            width: 6em;
-            height: 6em;
             position: absolute;
             z-index: 2;
             opacity: 0;
             cursor: pointer;
         }
             header .opener:checked ~ nav {
-                margin-left: -100%;
+                margin-top: -100%;
                 transition: .3s linear;
             }
 
@@ -116,13 +114,13 @@ header a {
         }
 
             header .hamb>.fa-bars {
-                font-size: 4.2rem;
+                font-size: 3rem;
                 margin: 10% 0 0 12%
             }
 
         header>.imgcabecera {
             flex-grow: 1;
-            height: 5em;
+            height: 3.6em;
             align-self: center;
         }
 
@@ -131,15 +129,15 @@ header a {
             }
 
             header>.imgcabecera img {
-                height: 5em;
+                height: 3.6em;
                 justify-self: center;
             }
 
         header>nav {
-            width: 80%;
+            width: 50%;
             position: absolute;
             top: 0;
-            left: 5em;
+            left: 3.6em;
             background-color: gray;
             border: 1px solid black;
             transition: .3s linear;
@@ -147,7 +145,9 @@ header a {
         }
 
             header>nav a {
-                padding: 5%;
+                padding: 3%;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
             }
                 header>nav a:hover {
                     background-color: #333333;
@@ -229,6 +229,8 @@ header a {
 
             header>nav a {
                 padding: 5%;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
             }
                 header>nav a:hover {
                     background-color: #333333;
