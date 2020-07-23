@@ -18,6 +18,11 @@
     }
 
 @media screen and (min-width:1281px) {
+    header>.imgcabecera img { 
+        width: auto;
+        height: 3.5em;
+    }
+
     .fondo {
         height: 50em;
     }
@@ -28,7 +33,7 @@
     }
 
     header>nav>.menu li>a {
-        padding: 8%;
+        padding: 6%;
     }
 
         header>nav>.menu>li:hover li {
@@ -38,22 +43,22 @@
 
 @media screen and (min-width:501px) and (max-width:1280px) {
     .fondo {
-        height: 45em;
+        height: 20em;
     }
 
     .fondo>.slogan {
-        top: 15em;
-        font-size: 2.5rem;
+        top: 11em;
+        font-size: 1.6rem;
     }
 }
 
 @media screen and (max-width:500px) {
     .fondo {
-        height: 40em;
+        height: 20em;
     }
 
     .fondo>.slogan {
-        top: 2.4em;
-        font-size: 2rem;
+        top: 2.8em;
+        font-size: 1.2rem;
     }
 }
